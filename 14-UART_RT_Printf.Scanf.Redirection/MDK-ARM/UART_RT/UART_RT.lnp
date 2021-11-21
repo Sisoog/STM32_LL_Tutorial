@@ -1,0 +1,17 @@
+--cpu Cortex-M3
+"uart_rt\startup_stm32f103xb.o"
+"uart_rt\main.o"
+"uart_rt\stm32f1xx_it.o"
+"uart_rt\stm32f1xx_ll_gpio.o"
+"uart_rt\stm32f1xx_ll_pwr.o"
+"uart_rt\stm32f1xx_ll_exti.o"
+"uart_rt\stm32f1xx_ll_usart.o"
+"uart_rt\stm32f1xx_ll_dma.o"
+"uart_rt\stm32f1xx_ll_rcc.o"
+"uart_rt\stm32f1xx_ll_utils.o"
+"uart_rt\system_stm32f1xx.o"
+"uart_rt\retarget_io.o"
+--library_type=microlib --strict --scatter "UART_RT\UART_RT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UART_RT.map" -o UART_RT\UART_RT.axf
