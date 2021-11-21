@@ -1,0 +1,18 @@
+--cpu Cortex-M3
+"timer_input_capture\startup_stm32f103xe.o"
+"timer_input_capture\main.o"
+"timer_input_capture\stm32f1xx_it.o"
+"timer_input_capture\stm32f1xx_ll_gpio.o"
+"timer_input_capture\stm32f1xx_ll_pwr.o"
+"timer_input_capture\stm32f1xx_ll_exti.o"
+"timer_input_capture\stm32f1xx_ll_tim.o"
+"timer_input_capture\stm32f1xx_ll_dma.o"
+"timer_input_capture\stm32f1xx_ll_rcc.o"
+"timer_input_capture\stm32f1xx_ll_utils.o"
+"timer_input_capture\stm32f1xx_ll_usart.o"
+"timer_input_capture\system_stm32f1xx.o"
+"timer_input_capture\retarget_io.o"
+--library_type=microlib --strict --scatter "Timer_input_capture\Timer_input_capture.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Timer_input_capture.map" -o Timer_input_capture\Timer_input_capture.axf
