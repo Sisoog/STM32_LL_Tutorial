@@ -1,0 +1,16 @@
+--cpu Cortex-M3
+"blink_ll_timer\startup_stm32f103xb.o"
+"blink_ll_timer\main.o"
+"blink_ll_timer\stm32f1xx_it.o"
+"blink_ll_timer\stm32f1xx_ll_gpio.o"
+"blink_ll_timer\stm32f1xx_ll_pwr.o"
+"blink_ll_timer\stm32f1xx_ll_exti.o"
+"blink_ll_timer\stm32f1xx_ll_tim.o"
+"blink_ll_timer\stm32f1xx_ll_dma.o"
+"blink_ll_timer\stm32f1xx_ll_rcc.o"
+"blink_ll_timer\stm32f1xx_ll_utils.o"
+"blink_ll_timer\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Blink_LL_Timer\Blink_LL_Timer.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Blink_LL_Timer.map" -o Blink_LL_Timer\Blink_LL_Timer.axf
