@@ -1,0 +1,14 @@
+--cpu Cortex-M3
+"interrupt\startup_stm32f103xb.o"
+"interrupt\main.o"
+"interrupt\stm32f1xx_it.o"
+"interrupt\stm32f1xx_ll_gpio.o"
+"interrupt\stm32f1xx_ll_pwr.o"
+"interrupt\stm32f1xx_ll_exti.o"
+"interrupt\stm32f1xx_ll_rcc.o"
+"interrupt\stm32f1xx_ll_utils.o"
+"interrupt\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "interrupt\interrupt.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "interrupt.map" -o interrupt\interrupt.axf
