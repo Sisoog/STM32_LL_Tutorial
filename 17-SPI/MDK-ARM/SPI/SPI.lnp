@@ -1,0 +1,16 @@
+--cpu Cortex-M3
+"spi\startup_stm32f103xb.o"
+"spi\main.o"
+"spi\stm32f1xx_it.o"
+"spi\stm32f1xx_ll_gpio.o"
+"spi\stm32f1xx_ll_spi.o"
+"spi\stm32f1xx_ll_dma.o"
+"spi\stm32f1xx_ll_rcc.o"
+"spi\stm32f1xx_ll_utils.o"
+"spi\stm32f1xx_ll_exti.o"
+"spi\stm32f1xx_ll_pwr.o"
+"spi\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "SPI\SPI.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SPI.map" -o SPI\SPI.axf
