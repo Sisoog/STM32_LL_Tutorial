@@ -1,0 +1,16 @@
+--cpu Cortex-M3
+"memory to usart_tx\startup_stm32f103xb.o"
+"memory to usart_tx\main.o"
+"memory to usart_tx\stm32f1xx_it.o"
+"memory to usart_tx\stm32f1xx_ll_gpio.o"
+"memory to usart_tx\stm32f1xx_ll_dma.o"
+"memory to usart_tx\stm32f1xx_ll_pwr.o"
+"memory to usart_tx\stm32f1xx_ll_exti.o"
+"memory to usart_tx\stm32f1xx_ll_usart.o"
+"memory to usart_tx\stm32f1xx_ll_rcc.o"
+"memory to usart_tx\stm32f1xx_ll_utils.o"
+"memory to usart_tx\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Memory to USART_TX\Memory to USART_TX.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Memory to USART_TX.map" -o "Memory to USART_TX\Memory to USART_TX.axf"
