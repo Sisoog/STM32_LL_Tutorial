@@ -1,0 +1,14 @@
+--cpu Cortex-M3
+"blink_ll\startup_stm32f103xb.o"
+"blink_ll\main.o"
+"blink_ll\stm32f1xx_it.o"
+"blink_ll\stm32f1xx_ll_gpio.o"
+"blink_ll\stm32f1xx_ll_pwr.o"
+"blink_ll\stm32f1xx_ll_exti.o"
+"blink_ll\stm32f1xx_ll_rcc.o"
+"blink_ll\stm32f1xx_ll_utils.o"
+"blink_ll\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "blink_LL\blink_LL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "blink_LL.map" -o blink_LL\blink_LL.axf
