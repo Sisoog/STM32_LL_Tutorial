@@ -1,6 +1,6 @@
 #This project is created for STM32F103C8T6 microcontroller(Blue Pill board)
 
-in this project pin1 of the portA of the Micro is connected to a push button. for every 5 times the button is pressed down, the LED that is connected to pin13 of the portA is toggled.
+in this project pin1 of the portA of the Micro is connected to a push button. for every 5 times the button is pressed down, the LED that is connected to pin13 of the portC is toggled.
 counting the number of the presses on the button, is done by an external interrupt.
 
 the article and complete guidance for the code in this project can be found in sisoog.com :
