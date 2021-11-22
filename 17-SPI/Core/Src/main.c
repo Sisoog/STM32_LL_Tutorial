@@ -60,14 +60,14 @@ static void MX_SPI1_Init(void);
 
 void send_SPI(uint8_t data)
 {
-    LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_4);
+    LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_4); 	//RCK in 74HC595
 		  while(!LL_SPI_IsActiveFlag_TXE(SPI1));
 		  LL_SPI_TransmitData8(SPI1, data);
 //			if(LL_SPI_IsActiveFlag_RXNE(SPI1))
 //			{}
 //      __NOP();
 		  LL_mDelay(20);
-		LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_4);
+		LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_4);	//RCK in 74HC595
 
 }
 /* USER CODE END 0 */
