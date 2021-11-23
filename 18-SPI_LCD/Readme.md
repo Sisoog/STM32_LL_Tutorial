@@ -1,4 +1,5 @@
-#This project is created for STM32F103C8T6 microcontroller (Blue Pill board)
+<h1> Example project for Displaying figures on serila LCD (Nokia 5110) using SPI unit </h1>
+Bold - **This project is created for STM32F103C8T6 microcontroller (Blue Pill board)**
 
 In this project, SPI1 of the microcontroller is activated and then is used for transmitting data, that is sending arrays to display figures on a Nokia 5110 serial LCD. 
 
