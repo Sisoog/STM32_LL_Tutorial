@@ -1,4 +1,4 @@
-<h1> Example project for Displaying figures on serila LCD (Nokia 5110) using SPI unit </h1>
+<h1> Example project for Displaying figures on serial LCD (Nokia 5110) using SPI unit </h1>
 <b>This project is created for STM32F103C8T6 microcontroller (Blue Pill board)</b>
 
 
