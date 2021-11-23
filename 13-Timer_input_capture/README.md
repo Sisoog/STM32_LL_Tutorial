@@ -1,4 +1,5 @@
-#This project is created for STM32F103RET6 microcontroller
+<h1> Example project for calculating input signal's frequency using timer's input_capture mode </h1>
+<b>This project is created for STM32F103RET6 microcontroller</b>
 
 in this project, we activate Timer1 of the microcontroller and configure it in input_capture mode. we want to use timer1 to calculate the frequency of our desired signal.
 Note that the signal whose frequency is to be calculated, must be exerted on pin8 of portA. 
