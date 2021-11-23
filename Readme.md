@@ -1,7 +1,7 @@
 <h1> This is a repository for the projects files of STM32_LL tutorials in sisoog.com </h1>
-<b> all projects are generated using CUBE MX and developed using Keil v5.32 (with LL drivers) </b>
-  
-  <b> Projects in this repository: </b>
+<b> all projects are generated using CUBE MX and developed using Keil v5.32 (with LL drivers) </b> </br>
+ 
+  <b> Projects in this repository: </b> <pre>
   - 03-Blink                  [link for the associated article in sisoog.com](https://sisoog.com/2020/08/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-stm32-%D8%A8%D8%A7-%D8%AA%D9%88%D8%A7%D8%A8%D8%B9-ll-%D9%82%D8%B3%D9%85%D8%AA-%D8%B3%D9%88%D9%85-stm32cubemx-%D9%88-keil/)
   - 07-Interrupt              [link for the associated article in sisoog.com](https://sisoog.com/2020/11/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-stm32-%d8%a8%d8%a7-%d8%aa%d9%88%d8%a7%d8%a8%d8%b9-ll-%d9%82%d8%b3%d9%85%d8%aa-%d9%87%d9%81%d8%aa%d9%85-interrupt/)
   - 08-UART-Transmit          [link for the associated article in sisoog.com](https://sisoog.com/2020/12/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-stm32-%d8%a8%d8%a7-%d8%aa%d9%88%d8%a7%d8%a8%d8%b9-ll-%d9%82%d8%b3%d9%85%d8%aa-%d9%87%d8%b4%d8%aa%d9%85-uart-transmit/)
@@ -15,3 +15,4 @@
   - 17-SPI
   - 18-SPI_LCD
   - 19-SPI_LCD_Font
+</pre>
