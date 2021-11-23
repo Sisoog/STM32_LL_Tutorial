@@ -1,4 +1,5 @@
-#This project is created for STM32F103C8T6 microcontroller (Blue Pill board)
+<h1> Example project for Blinking LED </h1>
+<b>This project is created for STM32F103C8T6 microcontroller (Blue Pill board)</b>
 
 in this project pin13 of the portC of the Micro alternatingly is set to Vdd and Gnd(whit 500ms delay)، so the LED that is connected to this pin is turned-on and off accordingly.
 
