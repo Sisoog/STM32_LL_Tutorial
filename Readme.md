@@ -2,8 +2,8 @@
 <b> all projects are generated using CUBE MX and developed using Keil v5.32 </b>
   
   <b> Projects in this repository: </b>
-  -Blink 
-  -Interrupt
+  - Blink 
+  - Interrupt
   
   
   -08_UART-Transmit
