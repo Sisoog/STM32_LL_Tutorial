@@ -1,4 +1,5 @@
-#This project is created for STM32F103C8T6 microcontroller(Blue Pill board)
+<h1> Example project for using Analog to Digital unit </h1>
+<b>This project is created for STM32F103C8T6 microcontroller (Blue Pill board)</b>
 
 in this project, we activate ADC1 of the microcontroller and configure it for Continuous Conversion Mode. the analog voltage exerted on input of the ADC is then converted, and after calibration is displayed on serial terminal(via USART1).
 
