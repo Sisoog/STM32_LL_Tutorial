@@ -2,7 +2,9 @@
 <b> all projects are generated using CUBE MX and developed using Keil v5.32 </b>
   
   <b> Projects in this repository: </b>
-  -03_Blink_LL 
-  -07_Interrupt
+  -Blink 
+  -Interrupt
+  
+  
   -08_UART-Transmit
   *10-ADC
