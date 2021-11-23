@@ -2,11 +2,13 @@
 
 In this project, SPI1 of the microcontroller is activated and then is used for transmitting data, that is sending arrays for letters to display words on a Nokia 5110 serial LCD. Some additional header files for fonts and utility functions are used in this project.
 
-Pin map:
-PortA.pin0 is used for LDC_CE
-PortA.pin3 is used for LDC_Reset
-PortA.pin4 is used for LDC_DC
-PortA.pin5 is used for SPI1_SCK
-PortA.pin7 is used for SPI1_MOSI
+| Pin map     | Function    |
+| ----------- | ----------- |
+| PortA.pin0  | LDC_CE    |
+| PortA.pin3  | LDC_Reset |
+| PortA.pin4  | LDC_DC    |
+| PortA.pin5  | SPI1_SCK  |
+| PortA.pin7  | SPI1_MOSI |
+
 
 
