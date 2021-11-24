@@ -1,0 +1,18 @@
+--cpu Cortex-M3
+"spi_lcd\startup_stm32f103xb.o"
+"spi_lcd\lcd.o"
+"spi_lcd\main.o"
+"spi_lcd\stm32f1xx_it.o"
+"spi_lcd\stm32f1xx_ll_gpio.o"
+"spi_lcd\stm32f1xx_ll_dma.o"
+"spi_lcd\stm32f1xx_ll_spi.o"
+"spi_lcd\stm32f1xx_ll_rcc.o"
+"spi_lcd\stm32f1xx_ll_utils.o"
+"spi_lcd\stm32f1xx_ll_exti.o"
+"spi_lcd\stm32f1xx_ll_pwr.o"
+"spi_lcd\system_stm32f1xx.o"
+"spi_lcd\retarget_io.o"
+--library_type=microlib --strict --scatter "SPI_LCD\SPI_LCD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SPI_LCD.map" -o SPI_LCD\SPI_LCD.axf
