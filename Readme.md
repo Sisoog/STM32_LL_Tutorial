@@ -15,4 +15,5 @@
   - 17-SPI
   - 18-SPI_LCD
   - 19-SPI_LCD_Font
+  - 20-SPI_LCD_DMA_(Animation on LCD)
 </pre>
