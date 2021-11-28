@@ -82,7 +82,7 @@ static void MX_USART1_UART_Init(void);
 
 	/* Retargeting stdout_putchar as to use USART_TX for data output */	
 	int stdout_putchar (int ch) {
-	  send_uart(ch);
+	  write_uart(ch);
 	  return (ch);
 	}
 	
