@@ -242,9 +242,9 @@ void USART1_IRQHandler(void)
 				r_index=0;
 		}
 		
-	//	__disable_irq();
+		__disable_irq();
 		counter--;
-	//	__enable_irq();
+		__enable_irq();
 		
 		return data;
 	}
