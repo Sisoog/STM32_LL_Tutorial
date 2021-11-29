@@ -16,5 +16,7 @@
   - 18-SPI_LCD
   - 19-SPI_LCD_Font
   - 20-SPI_LCD_DMA_(Animation on LCD)
-  - 21-Timer32bit_64bit
+  - 21-PWM
+  - 22-PWM_Wave
+  - 23-Timer32bit_64bit
 </pre>
