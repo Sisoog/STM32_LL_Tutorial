@@ -19,9 +19,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include <stdbool.h>
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "stdbool.h"
 #include "stdio.h"
 /* USER CODE END Includes */
 
@@ -32,9 +33,6 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define WC_pin	LL_GPIO_PIN_4
-#define I2C_port	GPIOB
-
 #define X_NOP()		{__NOP();__NOP();__NOP();__NOP();__NOP();__NOP();__NOP();__NOP();}
 #define Y_NOP()		X_NOP();X_NOP();X_NOP();X_NOP();X_NOP();X_NOP();X_NOP();X_NOP();X_NOP();X_NOP();
 #define Z_NOP()		Y_NOP();Y_NOP();Y_NOP();Y_NOP();Y_NOP();Y_NOP();Y_NOP();Y_NOP();Y_NOP();Y_NOP();
@@ -386,22 +384,11 @@ static void MX_USART1_UART_Init(void)
   */
 static void MX_GPIO_Init(void)
 {
-  LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
   LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_GPIOD);
   LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_GPIOA);
   LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_GPIOB);
-
-  /**/
-  LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_4);
-
-  /**/
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_4;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-  LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 }
 
