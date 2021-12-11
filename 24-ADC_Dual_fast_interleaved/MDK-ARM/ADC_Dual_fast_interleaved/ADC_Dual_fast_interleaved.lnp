@@ -1,0 +1,19 @@
+--cpu Cortex-M3
+"adc_dual_fast_interleaved\startup_stm32f103xb.o"
+"adc_dual_fast_interleaved\main.o"
+"adc_dual_fast_interleaved\stm32f1xx_it.o"
+"adc_dual_fast_interleaved\stm32f1xx_ll_gpio.o"
+"adc_dual_fast_interleaved\stm32f1xx_ll_adc.o"
+"adc_dual_fast_interleaved\stm32f1xx_ll_dma.o"
+"adc_dual_fast_interleaved\stm32f1xx_ll_rcc.o"
+"adc_dual_fast_interleaved\stm32f1xx_ll_utils.o"
+"adc_dual_fast_interleaved\stm32f1xx_ll_exti.o"
+"adc_dual_fast_interleaved\stm32f1xx_ll_pwr.o"
+"adc_dual_fast_interleaved\stm32f1xx_ll_tim.o"
+"adc_dual_fast_interleaved\stm32f1xx_ll_usart.o"
+"adc_dual_fast_interleaved\system_stm32f1xx.o"
+"adc_dual_fast_interleaved\retarget_io.o"
+--library_type=microlib --strict --scatter "ADC_Dual_fast_interleaved\ADC_Dual_fast_interleaved.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ADC_Dual_fast_interleaved.map" -o ADC_Dual_fast_interleaved\ADC_Dual_fast_interleaved.axf
