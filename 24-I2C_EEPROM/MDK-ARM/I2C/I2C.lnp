@@ -1,0 +1,18 @@
+--cpu Cortex-M3
+"i2c\startup_stm32f103xb.o"
+"i2c\main.o"
+"i2c\stm32f1xx_it.o"
+"i2c\stm32f1xx_ll_gpio.o"
+"i2c\stm32f1xx_ll_i2c.o"
+"i2c\stm32f1xx_ll_dma.o"
+"i2c\stm32f1xx_ll_rcc.o"
+"i2c\stm32f1xx_ll_utils.o"
+"i2c\stm32f1xx_ll_exti.o"
+"i2c\stm32f1xx_ll_pwr.o"
+"i2c\stm32f1xx_ll_usart.o"
+"i2c\system_stm32f1xx.o"
+"i2c\retarget_io.o"
+--library_type=microlib --strict --scatter "I2C\I2C.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "I2C.map" -o I2C\I2C.axf
