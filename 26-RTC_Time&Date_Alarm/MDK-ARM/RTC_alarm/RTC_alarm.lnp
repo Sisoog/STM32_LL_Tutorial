@@ -1,0 +1,18 @@
+--cpu Cortex-M3
+"rtc_alarm\startup_stm32f103xb.o"
+"rtc_alarm\main.o"
+"rtc_alarm\stm32f1xx_it.o"
+"rtc_alarm\stm32f1xx_ll_gpio.o"
+"rtc_alarm\stm32f1xx_ll_rtc.o"
+"rtc_alarm\stm32f1xx_ll_rcc.o"
+"rtc_alarm\stm32f1xx_ll_utils.o"
+"rtc_alarm\stm32f1xx_ll_exti.o"
+"rtc_alarm\stm32f1xx_ll_pwr.o"
+"rtc_alarm\stm32f1xx_ll_usart.o"
+"rtc_alarm\stm32f1xx_ll_dma.o"
+"rtc_alarm\system_stm32f1xx.o"
+"rtc_alarm\retarget_io.o"
+--library_type=microlib --strict --scatter "RTC_alarm\RTC_alarm.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RTC_alarm.map" -o RTC_alarm\RTC_alarm.axf
