@@ -10,7 +10,7 @@
   - 12-Blink_Timer                         [link for the associated article in sisoog.com](https://sisoog.com/2021/04/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-stm32-%d8%a8%d8%a7-%d8%aa%d9%88%d8%a7%d8%a8%d8%b9-ll-%d9%82%d8%b3%d9%85%d8%aa-%d8%af%d9%88%d8%a7%d8%b2%d8%af%d9%87%d9%85-timer-timebase/)
   - 13-Timer_input_capture                 [link for the associated article in sisoog.com](https://sisoog.com/2021/04/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-stm32-%d8%a8%d8%a7-%d8%aa%d9%88%d8%a7%d8%a8%d8%b9-ll-%d9%82%d8%b3%d9%85%d8%aa-%d8%b3%db%8c%d8%b2%d8%af%d9%87%d9%85-timer-input-capture/)
   - 14-UART_RT_Printf.Scanf.Redirection    [link for the associated article in sisoog.com](https://sisoog.com/2021/12/01/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-stm32-%d8%a8%d8%a7-%d8%aa%d9%88%d8%a7%d8%a8%d8%b9-ll-%d9%82%d8%b3%d9%85%d8%aa-%da%86%d9%87%d8%a7%d8%b1%d8%af%d9%87%d9%85-%d8%b1%db%8c%d8%af%d8%a7%db%8c%d8%b1%da%a9/) 
-  - 15-ADC_2channels_DMA
+  - 15-ADC_2channels_DMA                   [link for the associated article in sisoog.com](https://sisoog.com/2021/12/15/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-stm32-%d8%a8%d8%a7-%d8%aa%d9%88%d8%a7%d8%a8%d8%b9-ll-%d9%82%d8%b3%d9%85%d8%aa-%d9%be%d8%a7%d9%86%d8%b2%d8%af%d9%87%d9%85-%d8%b1%d8%a7%d9%87%e2%80%8c%d8%a7%d9%86%d8%af/)
   - 16-DMA_USART_TX
   - 17-SPI
   - 18-SPI_LCD
