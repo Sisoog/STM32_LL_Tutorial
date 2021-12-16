@@ -21,4 +21,6 @@
   - 23-Timer32bit_64bit
   - 24-ADC_Dual_fast_interleaved
   - 25-I2C_EEPROM
+  - 26-RTC_Time&Date_Alarm
+  - 27-RTC_Calibration
 </pre>
