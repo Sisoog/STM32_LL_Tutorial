@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"rtc_calibration\startup_stm32f103xb.o"
+"rtc_calibration\rtc_date&time.o"
+"rtc_calibration\stdio_usart1.o"
+"rtc_calibration\main.o"
+"rtc_calibration\stm32f1xx_it.o"
+"rtc_calibration\stm32f1xx_ll_gpio.o"
+"rtc_calibration\stm32f1xx_ll_rtc.o"
+"rtc_calibration\stm32f1xx_ll_rcc.o"
+"rtc_calibration\stm32f1xx_ll_utils.o"
+"rtc_calibration\stm32f1xx_ll_exti.o"
+"rtc_calibration\stm32f1xx_ll_pwr.o"
+"rtc_calibration\stm32f1xx_ll_tim.o"
+"rtc_calibration\stm32f1xx_ll_dma.o"
+"rtc_calibration\stm32f1xx_ll_usart.o"
+"rtc_calibration\system_stm32f1xx.o"
+"rtc_calibration\retarget_io.o"
+--library_type=microlib --strict --scatter "RTC_Calibration\RTC_Calibration.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RTC_Calibration.map" -o RTC_Calibration\RTC_Calibration.axf
