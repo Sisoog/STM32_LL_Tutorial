@@ -1,0 +1,19 @@
+--cpu Cortex-M3
+"wwdg\startup_stm32f103xe.o"
+"wwdg\show_all_reset_sources.o"
+"wwdg\stdio_usart1.o"
+"wwdg\main.o"
+"wwdg\stm32f1xx_it.o"
+"wwdg\stm32f1xx_ll_gpio.o"
+"wwdg\stm32f1xx_ll_pwr.o"
+"wwdg\stm32f1xx_ll_exti.o"
+"wwdg\stm32f1xx_ll_usart.o"
+"wwdg\stm32f1xx_ll_dma.o"
+"wwdg\stm32f1xx_ll_rcc.o"
+"wwdg\stm32f1xx_ll_utils.o"
+"wwdg\system_stm32f1xx.o"
+"wwdg\retarget_io.o"
+--library_type=microlib --strict --scatter "WWDG\WWDG.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "WWDG.map" -o WWDG\WWDG.axf
