@@ -23,4 +23,6 @@
   - 25-I2C_EEPROM
   - 26-RTC_Time&Date_Alarm
   - 27-RTC_Calibration
+  - 28-IWDG
+  - 29-WWDG
 </pre>
