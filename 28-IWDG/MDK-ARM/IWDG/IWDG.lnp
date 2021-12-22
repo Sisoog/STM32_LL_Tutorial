@@ -1,0 +1,18 @@
+--cpu Cortex-M3
+"iwdg\startup_stm32f103xb.o"
+"iwdg\stdio_usart1.o"
+"iwdg\main.o"
+"iwdg\stm32f1xx_it.o"
+"iwdg\stm32f1xx_ll_gpio.o"
+"iwdg\stm32f1xx_ll_rcc.o"
+"iwdg\stm32f1xx_ll_utils.o"
+"iwdg\stm32f1xx_ll_exti.o"
+"iwdg\stm32f1xx_ll_pwr.o"
+"iwdg\stm32f1xx_ll_usart.o"
+"iwdg\stm32f1xx_ll_dma.o"
+"iwdg\system_stm32f1xx.o"
+"iwdg\retarget_io.o"
+--library_type=microlib --strict --scatter "IWDG\IWDG.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IWDG.map" -o IWDG\IWDG.axf
