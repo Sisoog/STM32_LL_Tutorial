@@ -25,4 +25,5 @@
   - 27-RTC_Calibration
   - 28-IWDG
   - 29-WWDG
+  - 30-LSM6DS3_accelerometer_and_gyroscope
 </pre>
