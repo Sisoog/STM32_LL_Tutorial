@@ -1,0 +1,182 @@
+Dependencies for Project 'LSM6DS3_accelerometer_and_gyroscope', Target 'LSM6DS3_accelerometer_and_gyroscope': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (startup_stm32f103xe.s)(0x61CC91D3)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_LSM6DS3_accelerometer_and_gyroscope-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "STM32F10X_HD SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f103xe.lst --xref -o lsm6ds3_accelerometer_and_gyroscope\startup_stm32f103xe.o --depend lsm6ds3_accelerometer_and_gyroscope\startup_stm32f103xe.d)
+F (..\Core\Inc\stdio_usart1.c)(0x61BA1C25)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_LSM6DS3_accelerometer_and_gyroscope-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DSTM32F103xE-o lsm6ds3_accelerometer_and_gyroscope\stdio_usart1.o --omf_browse lsm6ds3_accelerometer_and_gyroscope\stdio_usart1.crf --depend lsm6ds3_accelerometer_and_gyroscope\stdio_usart1.d)
+I (..\Core\Inc\stdio_usart1.h)(0x61BA1D31)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+F (..\Core\Inc\stdio_usart1.h)(0x61BA1D31)()
+F (..\Core\Inc\LSM6DS3.h)(0x61CA231E)()
+F (..\Core\Inc\LSM6DS3.c)(0x61CCC315)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_LSM6DS3_accelerometer_and_gyroscope-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DSTM32F103xE-o lsm6ds3_accelerometer_and_gyroscope\lsm6ds3.o --omf_browse lsm6ds3_accelerometer_and_gyroscope\lsm6ds3.crf --depend lsm6ds3_accelerometer_and_gyroscope\lsm6ds3.d)
+I (..\Core\Inc\LSM6DS3.h)(0x61CA231E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60260474)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_spi.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h)(0x618C1229)
+F (../Core/Src/main.c)(0x61CCB20E)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_LSM6DS3_accelerometer_and_gyroscope-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DSTM32F103xE-o lsm6ds3_accelerometer_and_gyroscope\main.o --omf_browse lsm6ds3_accelerometer_and_gyroscope\main.crf --depend lsm6ds3_accelerometer_and_gyroscope\main.d)
+I (../Core/Inc/main.h)(0x61CC91CE)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_spi.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h)(0x618C1229)
+I (../Core/Inc/stdio_usart1.h)(0x61BA1D31)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60260474)
+I (../Core/Inc/LSM6DS3.h)(0x61CA231E)
+F (../Core/Src/stm32f1xx_it.c)(0x61CC91CD)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_LSM6DS3_accelerometer_and_gyroscope-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DSTM32F103xE-o lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_it.o --omf_browse lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_it.crf --depend lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_it.d)
+I (../Core/Inc/main.h)(0x61CC91CE)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_spi.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h)(0x618C1229)
+I (../Core/Inc/stm32f1xx_it.h)(0x61CC91CE)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_gpio.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_LSM6DS3_accelerometer_and_gyroscope-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DSTM32F103xE-o lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_gpio.o --omf_browse lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_gpio.crf --depend lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_gpio.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_spi.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_LSM6DS3_accelerometer_and_gyroscope-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DSTM32F103xE-o lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_spi.o --omf_browse lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_spi.crf --depend lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_spi.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_spi.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_dma.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_LSM6DS3_accelerometer_and_gyroscope-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DSTM32F103xE-o lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_dma.o --omf_browse lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_dma.crf --depend lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_dma.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_LSM6DS3_accelerometer_and_gyroscope-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DSTM32F103xE-o lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_rcc.o --omf_browse lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_rcc.crf --depend lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_rcc.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_LSM6DS3_accelerometer_and_gyroscope-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DSTM32F103xE-o lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_utils.o --omf_browse lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_utils.crf --depend lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_utils.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_LSM6DS3_accelerometer_and_gyroscope-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DSTM32F103xE-o lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_exti.o --omf_browse lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_exti.crf --depend lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_exti.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_pwr.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_LSM6DS3_accelerometer_and_gyroscope-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DSTM32F103xE-o lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_pwr.o --omf_browse lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_pwr.crf --depend lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_pwr.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usart.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_LSM6DS3_accelerometer_and_gyroscope-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DSTM32F103xE-o lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_usart.o --omf_browse lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_usart.crf --depend lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_usart.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+F (../Core/Src/system_stm32f1xx.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_LSM6DS3_accelerometer_and_gyroscope-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DSTM32F103xE-o lsm6ds3_accelerometer_and_gyroscope\system_stm32f1xx.o --omf_browse lsm6ds3_accelerometer_and_gyroscope\system_stm32f1xx.crf --depend lsm6ds3_accelerometer_and_gyroscope\system_stm32f1xx.d)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+F (C:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Source\retarget_io.c)(0x584F0ABE)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_LSM6DS3_accelerometer_and_gyroscope-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DSTM32F103xE-o lsm6ds3_accelerometer_and_gyroscope\retarget_io.o --omf_browse lsm6ds3_accelerometer_and_gyroscope\retarget_io.crf --depend lsm6ds3_accelerometer_and_gyroscope\retarget_io.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6026047E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60260474)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60260474)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60260478)
+I (C:\Keil_v5\ARM\ARMCC\include\rt_sys.h)(0x6026047E)
+I (.\RTE\_LSM6DS3_accelerometer_and_gyroscope\RTE_Components.h)(0x61C4D292)

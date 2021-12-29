@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+"lsm6ds3_accelerometer_and_gyroscope\startup_stm32f103xe.o"
+"lsm6ds3_accelerometer_and_gyroscope\stdio_usart1.o"
+"lsm6ds3_accelerometer_and_gyroscope\lsm6ds3.o"
+"lsm6ds3_accelerometer_and_gyroscope\main.o"
+"lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_it.o"
+"lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_gpio.o"
+"lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_spi.o"
+"lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_dma.o"
+"lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_rcc.o"
+"lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_utils.o"
+"lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_exti.o"
+"lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_pwr.o"
+"lsm6ds3_accelerometer_and_gyroscope\stm32f1xx_ll_usart.o"
+"lsm6ds3_accelerometer_and_gyroscope\system_stm32f1xx.o"
+"lsm6ds3_accelerometer_and_gyroscope\retarget_io.o"
+--library_type=microlib --strict --scatter "LSM6DS3_accelerometer_and_gyroscope\LSM6DS3_accelerometer_and_gyroscope.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LSM6DS3_accelerometer_and_gyroscope.map" -o LSM6DS3_accelerometer_and_gyroscope\LSM6DS3_accelerometer_and_gyroscope.axf
