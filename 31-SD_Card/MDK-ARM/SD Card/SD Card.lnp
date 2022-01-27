@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"sd card\startup_stm32f103xb.o"
+"sd card\main.o"
+"sd card\stm32f1xx_it.o"
+"sd card\stdio_usart1.o"
+"sd card\system_stm32f1xx.o"
+"sd card\stm32f1xx_ll_gpio.o"
+"sd card\stm32f1xx_ll_pwr.o"
+"sd card\stm32f1xx_ll_exti.o"
+"sd card\stm32f1xx_ll_usart.o"
+"sd card\stm32f1xx_ll_dma.o"
+"sd card\stm32f1xx_ll_rcc.o"
+"sd card\stm32f1xx_ll_utils.o"
+"sd card\ff.o"
+"sd card\ffsystem.o"
+"sd card\ffunicode.o"
+"sd card\mmc_stm32f1_spi.o"
+"sd card\retarget_io.o"
+--library_type=microlib --strict --scatter "SD Card\SD Card.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SD Card.map" -o "SD Card\SD Card.axf"
