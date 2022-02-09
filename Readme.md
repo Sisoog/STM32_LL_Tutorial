@@ -26,5 +26,6 @@
   - 28-IWDG
   - 29-WWDG
   - 30-LSM6DS3_accelerometer_and_gyroscope
-  - 31-31-SD_Card
+  - 31-SD_Card
+  - 32-Wave_Player
 </pre>

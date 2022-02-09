@@ -7,7 +7,9 @@ In this project, a SD memory card is connected to the microcontroller and then D
 | ----------- | ----------- |
 | PortA.pin9   | USART1_TX    |
 | PortA.pin10  | USART1_RX    |
-| PortB.pin12  | SPI2_CS  |
+| PortA.pin4   | DAC.Out1     |
+| PortA.pin5   | DAC.Out2     |
+| PortB.pin12  | SPI2_CS   |
 | PortB.pin13  | SPI2_SCK  |
 | PortB.pin14  | SPI2_MISO |
 | PortB.pin15  | SPI2_MOSI |
