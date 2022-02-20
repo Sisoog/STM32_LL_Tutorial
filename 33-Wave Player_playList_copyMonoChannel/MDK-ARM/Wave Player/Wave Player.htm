@@ -3,9 +3,9 @@
 <title>Static Call Graph - [Wave Player\Wave Player.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image Wave Player\Wave Player.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Feb 16 11:45:06 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Feb 20 15:10:42 2022
 <BR><P>
-<H3>Maximum Stack Usage =       1176 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =       1184 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 main &rArr; scan_files &rArr;  scan_files (Cycle)
 <P>
@@ -91,7 +91,7 @@ Function Pointers
  <LI><a href="#[5]">UsageFault_Handler</a> from stm32f1xx_it.o(i.UsageFault_Handler) referenced from startup_stm32f103xe.o(RESET)
  <LI><a href="#[a]">WWDG_IRQHandler</a> from startup_stm32f103xe.o(.text) referenced from startup_stm32f103xe.o(RESET)
  <LI><a href="#[48]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_stm32f103xe.o(.text)
- <LI><a href="#[4a]">_sputc</a> from printfa.o(i._sputc) referenced from printfa.o(i.__0sprintf)
+ <LI><a href="#[4a]">_snputc</a> from printfa.o(i._snputc) referenced from printfa.o(i.__0snprintf)
  <LI><a href="#[49]">fputc</a> from retarget_io.o(i.fputc) referenced from printfa.o(i.__0printf)
  <LI><a href="#[46]">main</a> from main.o(i.main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
@@ -307,7 +307,7 @@ Global Symbols
 </UL>
 <P><STRONG><a name="[c1]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_read
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_readHeader
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_readHeader
 </UL>
 
 <P><STRONG><a name="[c7]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
@@ -317,9 +317,9 @@ Global Symbols
 <P><STRONG><a name="[ef]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
 <P><STRONG><a name="[4e]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<BR><BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_name
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
 <LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_name
 </UL>
 
 <P><STRONG><a name="[f0]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
@@ -338,8 +338,8 @@ Global Symbols
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_DAC_Init
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_TimerConf
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_clear
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_TimerConf
 </UL>
 
 <P><STRONG><a name="[f2]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
@@ -348,8 +348,14 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
 </UL>
 
-<P><STRONG><a name="[ce]"></a>strstr</STRONG> (Thumb, 36 bytes, Stack size 12 bytes, strstr.o(.text))
+<P><STRONG><a name="[cf]"></a>strstr</STRONG> (Thumb, 36 bytes, Stack size 12 bytes, strstr.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = strstr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_files
+</UL>
+
+<P><STRONG><a name="[cc]"></a>strncpy</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, strncpy.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = strncpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_files
 </UL>
@@ -358,7 +364,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_name
 </UL>
 
-<P><STRONG><a name="[cc]"></a>strlen</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, strlen.o(.text))
+<P><STRONG><a name="[cd]"></a>strlen</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, strlen.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_files
 </UL>
 
@@ -372,7 +378,7 @@ Global Symbols
 <P><STRONG><a name="[e6]"></a>strncmp</STRONG> (Thumb, 30 bytes, Stack size 12 bytes, strncmp.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = strncmp
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_readHeader
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_readHeader
 </UL>
 
 <P><STRONG><a name="[50]"></a>__aeabi_dmul</STRONG> (Thumb, 228 bytes, Stack size 48 bytes, dmul.o(.text))
@@ -380,8 +386,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_SD_Card_space
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_SD_Card_space
 </UL>
 
 <P><STRONG><a name="[52]"></a>__aeabi_ddiv</STRONG> (Thumb, 222 bytes, Stack size 32 bytes, ddiv.o(.text))
@@ -389,8 +395,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
 </UL>
-<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_SD_Card_space
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_SD_Card_space
 </UL>
 
 <P><STRONG><a name="[54]"></a>__aeabi_ui2d</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, dfltui.o(.text))
@@ -461,9 +467,9 @@ Global Symbols
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
 <P><STRONG><a name="[5c]"></a>__aeabi_dsub</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
@@ -579,23 +585,17 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_TIM_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM2_Init
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_TimerConf
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_TimerConf
 </UL>
 
 <P><STRONG><a name="[6a]"></a>LL_USART_Init</STRONG> (Thumb, 154 bytes, Stack size 40 bytes, stm32f1xx_ll_usart.o(i.LL_USART_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = LL_USART_Init &rArr; LL_USART_SetBaudRate
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = LL_USART_Init &rArr; LL_RCC_GetSystemClocksFreq &rArr; RCC_GetSystemClockFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_USART_SetBaudRate
+<BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_RCC_GetSystemClocksFreq
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_USART_SetBaudRate
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_USART_IsEnabled
-<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_RCC_GetSystemClocksFreq
 </UL>
 <BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART1_UART_Init
-</UL>
-
-<P><STRONG><a name="[e4]"></a>LL_mDelay</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, stm32f1xx_ll_utils.o(i.LL_mDelay))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_mDelay
-</UL>
-<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
 </UL>
 
 <P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f1xx_it.o(i.MemManage_Handler))
@@ -611,12 +611,12 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 344<LI>Call Chain = Print_SD_Card_space &rArr; f_getfree &rArr; mount_volume &rArr; find_volume &rArr; check_fs &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_getfree
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
-<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_Init
 </UL>
@@ -648,8 +648,8 @@ Global Symbols
 <P><STRONG><a name="[88]"></a>SD_Card_Init</STRONG> (Thumb, 164 bytes, Stack size 16 bytes, sd_utility.o(i.SD_Card_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 288<LI>Call Chain = SD_Card_Init &rArr; f_mount &rArr; mount_volume &rArr; find_volume &rArr; check_fs &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_mount
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_initialize
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_initialize
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_mount
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_Init
 </UL>
@@ -689,37 +689,36 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_SD_Card_space
-<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_start
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_readHeader
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
-<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_open
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_IsEndofFile
 <LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_Init
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_files
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_start
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_readHeader
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_open
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_IsEndofFile
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_SD_Card_space
 </UL>
 
 <P><STRONG><a name="[fb]"></a>__c89printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
 
 <P><STRONG><a name="[fc]"></a>printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
 
-<P><STRONG><a name="[91]"></a>__0sprintf</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sputc
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<P><STRONG><a name="[91]"></a>__0snprintf</STRONG> (Thumb, 48 bytes, Stack size 40 bytes, printfa.o(i.__0snprintf), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[fd]"></a>__1sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
+<P><STRONG><a name="[fd]"></a>__1snprintf</STRONG> (Thumb, 0 bytes, Stack size 40 bytes, printfa.o(i.__0snprintf), UNUSED)
 
-<P><STRONG><a name="[cd]"></a>__2sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2sprintf
+<P><STRONG><a name="[ce]"></a>__2snprintf</STRONG> (Thumb, 0 bytes, Stack size 40 bytes, printfa.o(i.__0snprintf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __2snprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_files
 </UL>
 
-<P><STRONG><a name="[fe]"></a>__c89sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
+<P><STRONG><a name="[fe]"></a>__c89snprintf</STRONG> (Thumb, 0 bytes, Stack size 40 bytes, printfa.o(i.__0snprintf), UNUSED)
 
-<P><STRONG><a name="[ff]"></a>sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
+<P><STRONG><a name="[ff]"></a>snprintf</STRONG> (Thumb, 0 bytes, Stack size 40 bytes, printfa.o(i.__0snprintf), UNUSED)
 
 <P><STRONG><a name="[100]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
@@ -735,8 +734,8 @@ Global Symbols
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_spi
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deselect
 </UL>
-<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_Card_Init
-<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mount_volume
+<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mount_volume
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_Card_Init
 </UL>
 
 <P><STRONG><a name="[b1]"></a>disk_read</STRONG> (Thumb, 140 bytes, Stack size 24 bytes, mmc_stm32f1_spi.o(i.disk_read))
@@ -804,7 +803,7 @@ Global Symbols
 <LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_chain
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clst2sect
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_readHeader
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_readHeader
 </UL>
 
 <P><STRONG><a name="[89]"></a>f_mount</STRONG> (Thumb, 80 bytes, Stack size 40 bytes, ff.o(i.f_mount))
@@ -819,8 +818,7 @@ Global Symbols
 <P><STRONG><a name="[b9]"></a>f_open</STRONG> (Thumb, 492 bytes, Stack size 104 bytes, ff.o(i.f_open))
 <BR><BR>[Stack]<UL><LI>Max Depth = 352<LI>Call Chain = f_open &rArr; follow_path &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_read
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_read
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;st_dword
 <LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;st_clust
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;remove_chain
@@ -832,8 +830,9 @@ Global Symbols
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;follow_path
 <LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_register
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clst2sect
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_open
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_open
 </UL>
 
 <P><STRONG><a name="[bf]"></a>f_opendir</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, ff.o(i.f_opendir))
@@ -850,15 +849,15 @@ Global Symbols
 <P><STRONG><a name="[c0]"></a>f_read</STRONG> (Thumb, 412 bytes, Stack size 72 bytes, ff.o(i.f_read))
 <BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = f_read &rArr; get_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_read
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;validate
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_fat
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clst2sect
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_readHeader
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_IsEndofFile
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_readHeader
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_IsEndofFile
 </UL>
 
 <P><STRONG><a name="[c2]"></a>f_readdir</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, ff.o(i.f_readdir))
@@ -880,16 +879,18 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0printf)
 </UL>
-<P><STRONG><a name="[d1]"></a>free</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, malloc.o(i.free))
+<P><STRONG><a name="[d2]"></a>free</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, malloc.o(i.free))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = free
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_files
 </UL>
 
 <P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 114 bytes, Stack size 128 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 1176<LI>Call Chain = main &rArr; scan_files &rArr;  scan_files (Cycle)
+<BR><BR>[Stack]<UL><LI>Max Depth = 1184<LI>Call Chain = main &rArr; scan_files &rArr;  scan_files (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_Init
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_files
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART1_UART_Init
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM2_Init
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
@@ -897,69 +898,68 @@ Global Symbols
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_DAC_Init
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_APB2_GRP1_EnableClock
 <LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_APB1_GRP1_EnableClock
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_Init
-<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_files
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[cf]"></a>malloc</STRONG> (Thumb, 92 bytes, Stack size 20 bytes, malloc.o(i.malloc))
+<P><STRONG><a name="[d0]"></a>malloc</STRONG> (Thumb, 92 bytes, Stack size 20 bytes, malloc.o(i.malloc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = malloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_files
 </UL>
 
-<P><STRONG><a name="[c8]"></a>scan_files</STRONG> (Thumb, 176 bytes, Stack size 72 bytes, wav_handler.o(i.scan_files))
-<BR><BR>[Stack]<UL><LI>Max Depth = 1048 + In Cycle
+<P><STRONG><a name="[c8]"></a>scan_files</STRONG> (Thumb, 198 bytes, Stack size 72 bytes, wav_handler.o(i.scan_files))
+<BR><BR>[Stack]<UL><LI>Max Depth = 1056 + In Cycle
 <LI>Call Chain = scan_files &rArr;  scan_files (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_readdir
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_files
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_readdir
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_opendir
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_closedir
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
-<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_files
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strstr
-<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2snprintf
 <LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncpy
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strstr
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
 </UL>
-<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_files
+<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_files
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[c5]"></a>stdout_putchar</STRONG> (Thumb, 14 bytes, Stack size 4 bytes, stdio_usart1.o(i.stdout_putchar))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = stdout_putchar
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_uart
+<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_uart
 </UL>
 <BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
 </UL>
 
-<P><STRONG><a name="[d5]"></a>wave_DACConf</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, wav_handler.o(i.wave_DACConf))
+<P><STRONG><a name="[d6]"></a>wave_DACConf</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, wav_handler.o(i.wave_DACConf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = wave_DACConf &rArr; wave_DMAConf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_TimerConf
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DAC_EnableDMAReq
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DAC_Enable
+<BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_TimerConf
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DAC_EnableDMAReq
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DAC_Enable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
 </UL>
 
-<P><STRONG><a name="[d7]"></a>wave_DMAConf</STRONG> (Thumb, 350 bytes, Stack size 40 bytes, wav_handler.o(i.wave_DMAConf))
+<P><STRONG><a name="[d8]"></a>wave_DMAConf</STRONG> (Thumb, 350 bytes, Stack size 40 bytes, wav_handler.o(i.wave_DMAConf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = wave_DMAConf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DMA_SetPeriphSize
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DMA_SetMemorySize
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DMA_SetDataLength
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DMA_EnableChannel
+<BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DMA_SetPeriphSize
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DMA_SetMemorySize
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DMA_SetDataLength
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DMA_EnableChannel
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DMA_DisableChannel
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DMA_ConfigAddresses
-<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DMA_ConfigAddresses
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DACConf
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DACConf
 </UL>
 
 <P><STRONG><a name="[62]"></a>wave_DMA_HT_Callback</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, wav_handler.o(i.wave_DMA_HT_Callback))
@@ -981,149 +981,85 @@ Global Symbols
 <P><STRONG><a name="[c6]"></a>wave_Init</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, wav_handler.o(i.wave_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 352<LI>Call Chain = wave_Init &rArr; Print_SD_Card_space &rArr; f_getfree &rArr; mount_volume &rArr; find_volume &rArr; check_fs &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_Card_Init
+<BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DAC_Enable
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_Card_Init
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_SD_Card_space
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DAC_Enable
-<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[df]"></a>wave_IsEndofFile</STRONG> (Thumb, 188 bytes, Stack size 24 bytes, wav_handler.o(i.wave_IsEndofFile))
+<P><STRONG><a name="[e0]"></a>wave_IsEndofFile</STRONG> (Thumb, 188 bytes, Stack size 24 bytes, wav_handler.o(i.wave_IsEndofFile))
 <BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = wave_IsEndofFile &rArr; f_read &rArr; get_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_read
 <LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
 </UL>
 
-<P><STRONG><a name="[d8]"></a>wave_TimerConf</STRONG> (Thumb, 80 bytes, Stack size 32 bytes, wav_handler.o(i.wave_TimerConf))
+<P><STRONG><a name="[d9]"></a>wave_TimerConf</STRONG> (Thumb, 80 bytes, Stack size 32 bytes, wav_handler.o(i.wave_TimerConf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = wave_TimerConf &rArr; LL_TIM_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TIM_Init
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TIM_DisableCounter
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TIM_DisableCounter
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DACConf
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DACConf
 </UL>
 
-<P><STRONG><a name="[e1]"></a>wave_open</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, wav_handler.o(i.wave_open))
+<P><STRONG><a name="[e2]"></a>wave_open</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, wav_handler.o(i.wave_open))
 <BR><BR>[Stack]<UL><LI>Max Depth = 368<LI>Call Chain = wave_open &rArr; f_open &rArr; follow_path &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
 <LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
 </UL>
 
-<P><STRONG><a name="[d0]"></a>wave_play</STRONG> (Thumb, 168 bytes, Stack size 608 bytes, wav_handler.o(i.wave_play))
-<BR><BR>[Stack]<UL><LI>Max Depth = 976<LI>Call Chain = wave_play &rArr; wave_open &rArr; f_open &rArr; follow_path &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
+<P><STRONG><a name="[d1]"></a>wave_play</STRONG> (Thumb, 186 bytes, Stack size 616 bytes, wav_handler.o(i.wave_play))
+<BR><BR>[Stack]<UL><LI>Max Depth = 984<LI>Call Chain = wave_play &rArr; wave_open &rArr; f_open &rArr; follow_path &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_mDelay
-<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_start
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_readHeader
-<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_open
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_IsEndofFile
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DACConf
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TIM_DisableCounter
+<BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_start
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_readHeader
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_open
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_IsEndofFile
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DACConf
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TIM_DisableCounter
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DMA_DisableChannel
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_DAC_Disable
-<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scan_files
 </UL>
 
-<P><STRONG><a name="[e2]"></a>wave_readHeader</STRONG> (Thumb, 200 bytes, Stack size 32 bytes, wav_handler.o(i.wave_readHeader))
+<P><STRONG><a name="[e3]"></a>wave_readHeader</STRONG> (Thumb, 196 bytes, Stack size 32 bytes, wav_handler.o(i.wave_readHeader))
 <BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = wave_readHeader &rArr; f_read &rArr; get_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_read
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_lseek
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp
 <LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
 </UL>
 
-<P><STRONG><a name="[e3]"></a>wave_start</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, wav_handler.o(i.wave_start))
+<P><STRONG><a name="[e4]"></a>wave_start</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, wav_handler.o(i.wave_start))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = wave_start &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
 </UL>
 
-<P><STRONG><a name="[d4]"></a>write_uart</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stdio_usart1.o(i.write_uart))
+<P><STRONG><a name="[d5]"></a>write_uart</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stdio_usart1.o(i.write_uart))
 <BR><BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stdout_putchar
 </UL>
 <P>
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[e5]"></a>LL_DAC_Disable</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, wav_handler.o(i.LL_DAC_Disable))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_DAC_Disable
-</UL>
-<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
-</UL>
-
-<P><STRONG><a name="[d6]"></a>LL_DAC_Enable</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, wav_handler.o(i.LL_DAC_Enable))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_DAC_Enable
-</UL>
-<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_Init
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DACConf
-</UL>
-
-<P><STRONG><a name="[d9]"></a>LL_DAC_EnableDMAReq</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, wav_handler.o(i.LL_DAC_EnableDMAReq))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_DAC_EnableDMAReq
-</UL>
-<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DACConf
-</UL>
-
-<P><STRONG><a name="[dc]"></a>LL_DMA_ConfigAddresses</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, wav_handler.o(i.LL_DMA_ConfigAddresses))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = LL_DMA_ConfigAddresses
-</UL>
-<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
-</UL>
-
-<P><STRONG><a name="[61]"></a>LL_DMA_DisableChannel</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, wav_handler.o(i.LL_DMA_DisableChannel))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_DMA_DisableChannel
-</UL>
-<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
-<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_EndofFile_Callback
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
-<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA2_Channel3_IRQHandler
-</UL>
-
-<P><STRONG><a name="[de]"></a>LL_DMA_EnableChannel</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, wav_handler.o(i.LL_DMA_EnableChannel))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_DMA_EnableChannel
-</UL>
-<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
-</UL>
-
-<P><STRONG><a name="[dd]"></a>LL_DMA_SetDataLength</STRONG> (Thumb, 30 bytes, Stack size 12 bytes, wav_handler.o(i.LL_DMA_SetDataLength))
-<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = LL_DMA_SetDataLength
-</UL>
-<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
-</UL>
-
-<P><STRONG><a name="[db]"></a>LL_DMA_SetMemorySize</STRONG> (Thumb, 26 bytes, Stack size 12 bytes, wav_handler.o(i.LL_DMA_SetMemorySize))
-<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = LL_DMA_SetMemorySize
-</UL>
-<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
-</UL>
-
-<P><STRONG><a name="[da]"></a>LL_DMA_SetPeriphSize</STRONG> (Thumb, 26 bytes, Stack size 12 bytes, wav_handler.o(i.LL_DMA_SetPeriphSize))
-<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = LL_DMA_SetPeriphSize
-</UL>
-<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
-</UL>
-
-<P><STRONG><a name="[e0]"></a>LL_TIM_DisableCounter</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, wav_handler.o(i.LL_TIM_DisableCounter))
-<BR><BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_TimerConf
-</UL>
-
 <P><STRONG><a name="[6f]"></a>LL_APB1_GRP1_EnableClock</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, main.o(i.LL_APB1_GRP1_EnableClock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_APB1_GRP1_EnableClock
 </UL>
@@ -1231,17 +1167,17 @@ Local Symbols
 </UL>
 
 <P><STRONG><a name="[81]"></a>MX_TIM2_Init</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, main.o(i.MX_TIM2_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = MX_TIM2_Init &rArr; LL_APB1_GRP1_EnableClock
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = MX_TIM2_Init &rArr; LL_TIM_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_APB1_GRP1_EnableClock
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TIM_Init
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_TIM_Init
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_APB1_GRP1_EnableClock
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[83]"></a>MX_USART1_UART_Init</STRONG> (Thumb, 150 bytes, Stack size 56 bytes, main.o(i.MX_USART1_UART_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = MX_USART1_UART_Init &rArr; LL_USART_Init &rArr; LL_USART_SetBaudRate
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = MX_USART1_UART_Init &rArr; LL_USART_Init &rArr; LL_RCC_GetSystemClocksFreq &rArr; RCC_GetSystemClockFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_USART_Init
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_GPIO_Init
@@ -1284,10 +1220,10 @@ Local Symbols
 <P><STRONG><a name="[97]"></a>check_fs</STRONG> (Thumb, 210 bytes, Stack size 24 bytes, ff.o(i.check_fs))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = check_fs &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ld_word
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ld_dword
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_volume
 </UL>
@@ -1314,10 +1250,10 @@ Local Symbols
 <P><STRONG><a name="[9f]"></a>create_name</STRONG> (Thumb, 252 bytes, Stack size 48 bytes, ff.o(i.create_name))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = create_name
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strchr
-<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbc_2nd
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbc_2nd
 <LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbc_1st
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strchr
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;follow_path
 </UL>
@@ -1343,10 +1279,10 @@ Local Symbols
 <P><STRONG><a name="[a8]"></a>dir_clear</STRONG> (Thumb, 94 bytes, Stack size 32 bytes, ff.o(i.dir_clear))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = dir_clear &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sync_window
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clst2sect
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_next
 </UL>
@@ -1354,10 +1290,10 @@ Local Symbols
 <P><STRONG><a name="[ac]"></a>dir_find</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, ff.o(i.dir_find))
 <BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_sdi
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_next
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;follow_path
 </UL>
@@ -1388,9 +1324,9 @@ Local Symbols
 <P><STRONG><a name="[ae]"></a>dir_register</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, ff.o(i.dir_register))
 <BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = dir_register &rArr; dir_alloc &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_alloc
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
 </UL>
@@ -1436,10 +1372,10 @@ Local Symbols
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ld_word
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ld_dword
 </UL>
-<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_getfree
-<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_read
+<BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_read
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_lseek
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_getfree
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;remove_chain
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_sdi
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dir_next
@@ -1473,8 +1409,8 @@ Local Symbols
 </UL>
 
 <P><STRONG><a name="[9b]"></a>ld_dword</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, ff.o(i.ld_dword))
-<BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_getfree
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_getfree
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;put_fat
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mount_volume
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_fileinfo
@@ -1495,18 +1431,18 @@ Local Symbols
 <P><STRONG><a name="[b6]"></a>mount_volume</STRONG> (Thumb, 658 bytes, Stack size 64 bytes, ff.o(i.mount_volume))
 <BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = mount_volume &rArr; find_volume &rArr; check_fs &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; send_cmd &rArr;  send_cmd (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_initialize
-<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_status
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_status
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_initialize
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ld_word
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ld_dword
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_ldnumber
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;find_volume
 </UL>
-<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_mount
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_getfree
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_opendir
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_opendir
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_mount
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_getfree
 </UL>
 
 <P><STRONG><a name="[98]"></a>move_window</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, ff.o(i.move_window))
@@ -1515,8 +1451,8 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_read
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sync_window
 </UL>
-<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_getfree
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_getfree
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;put_fat
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mount_volume
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_fat
@@ -1591,11 +1527,11 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xchg_spi
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_initialize
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_read
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_initialize
 </UL>
 
 <P><STRONG><a name="[af]"></a>init_spi</STRONG> (Thumb, 162 bytes, Stack size 0 bytes, mmc_stm32f1_spi.o(i.init_spi))
@@ -1617,11 +1553,11 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcvr_datablock
 </UL>
 
-<P><STRONG><a name="[d2]"></a>select</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, mmc_stm32f1_spi.o(i.select))
+<P><STRONG><a name="[d3]"></a>select</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, mmc_stm32f1_spi.o(i.select))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = select &rArr; wait_ready
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xchg_spi
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_ready
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_ready
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deselect
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
@@ -1633,32 +1569,32 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xchg_spi
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deselect
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_initialize
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_read
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_initialize
 </UL>
 
-<P><STRONG><a name="[d3]"></a>wait_ready</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, mmc_stm32f1_spi.o(i.wait_ready))
+<P><STRONG><a name="[d4]"></a>wait_ready</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, mmc_stm32f1_spi.o(i.wait_ready))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = wait_ready
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xchg_spi
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xmit_datablock
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select
 </UL>
 
 <P><STRONG><a name="[a4]"></a>xchg_spi</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, mmc_stm32f1_spi.o(i.xchg_spi))
-<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_initialize
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xmit_datablock
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_ready
+<BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xmit_datablock
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_ready
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;select
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcvr_datablock
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deselect
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_initialize
 </UL>
 
 <P><STRONG><a name="[b3]"></a>xmit_datablock</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, mmc_stm32f1_spi.o(i.xmit_datablock))
@@ -1666,7 +1602,7 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xmit_spi_multi
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xchg_spi
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_ready
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_ready
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disk_write
 </UL>
@@ -1675,6 +1611,69 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = xmit_spi_multi
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xmit_datablock
+</UL>
+
+<P><STRONG><a name="[e5]"></a>LL_DAC_Disable</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, wav_handler.o(i.LL_DAC_Disable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_DAC_Disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
+</UL>
+
+<P><STRONG><a name="[d7]"></a>LL_DAC_Enable</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, wav_handler.o(i.LL_DAC_Enable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_DAC_Enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_Init
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DACConf
+</UL>
+
+<P><STRONG><a name="[da]"></a>LL_DAC_EnableDMAReq</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, wav_handler.o(i.LL_DAC_EnableDMAReq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_DAC_EnableDMAReq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DACConf
+</UL>
+
+<P><STRONG><a name="[dd]"></a>LL_DMA_ConfigAddresses</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, wav_handler.o(i.LL_DMA_ConfigAddresses))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = LL_DMA_ConfigAddresses
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
+</UL>
+
+<P><STRONG><a name="[61]"></a>LL_DMA_DisableChannel</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, wav_handler.o(i.LL_DMA_DisableChannel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_DMA_DisableChannel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_EndofFile_Callback
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA2_Channel3_IRQHandler
+</UL>
+
+<P><STRONG><a name="[df]"></a>LL_DMA_EnableChannel</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, wav_handler.o(i.LL_DMA_EnableChannel))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LL_DMA_EnableChannel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
+</UL>
+
+<P><STRONG><a name="[de]"></a>LL_DMA_SetDataLength</STRONG> (Thumb, 30 bytes, Stack size 12 bytes, wav_handler.o(i.LL_DMA_SetDataLength))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = LL_DMA_SetDataLength
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
+</UL>
+
+<P><STRONG><a name="[dc]"></a>LL_DMA_SetMemorySize</STRONG> (Thumb, 26 bytes, Stack size 12 bytes, wav_handler.o(i.LL_DMA_SetMemorySize))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = LL_DMA_SetMemorySize
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
+</UL>
+
+<P><STRONG><a name="[db]"></a>LL_DMA_SetPeriphSize</STRONG> (Thumb, 26 bytes, Stack size 12 bytes, wav_handler.o(i.LL_DMA_SetPeriphSize))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = LL_DMA_SetPeriphSize
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_DMAConf
+</UL>
+
+<P><STRONG><a name="[e1]"></a>LL_TIM_DisableCounter</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, wav_handler.o(i.LL_TIM_DisableCounter))
+<BR><BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_play
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wave_TimerConf
 </UL>
 
 <P><STRONG><a name="[92]"></a>_fp_digits</STRONG> (Thumb, 366 bytes, Stack size 64 bytes, printfa.o(i._fp_digits), UNUSED)
@@ -1689,13 +1688,13 @@ Local Symbols
 </UL>
 
 <P><STRONG><a name="[90]"></a>_printf_core</STRONG> (Thumb, 1704 bytes, Stack size 136 bytes, printfa.o(i._printf_core), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<BR><BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sprintf
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0snprintf
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf
 </UL>
 
@@ -1707,10 +1706,8 @@ Local Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[4a]"></a>_sputc</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, printfa.o(i._sputc))
-<BR><BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sprintf
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0sprintf)
+<P><STRONG><a name="[4a]"></a>_snputc</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, printfa.o(i._snputc))
+<BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0snprintf)
 </UL><P>
 <H3>
 Undefined Global Symbols

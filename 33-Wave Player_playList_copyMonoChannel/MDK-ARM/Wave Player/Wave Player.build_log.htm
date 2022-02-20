@@ -21,24 +21,22 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
 Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-C:\Users\TarahiPC01\Documents\projects\STM32F103RET6\Wave Player _ play list _ copy mono channel\MDK-ARM\Wave Player.uvprojx
-Project File Date:  02/14/2022
+C:\Users\TarahiPC01\sisoog_git\STM32_LL_Tutorial\33-Wave Player_playList_copyMonoChannel\MDK-ARM\Wave Player.uvprojx
+Project File Date:  02/20/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Wave Player'
 compiling WAV_Handler.c...
-..\Core\Src\WAV_Handler.c(87): warning:  #167-D: argument of type "__packed uint8_t *" is incompatible with parameter of type "const char *"
-                        if( (strncmp(wav1HeaderPtr->signatureHeader.ChunkID, "RIFF", 4) != 0) ||  (strncmp(wav1HeaderPtr->signatureHeader.Format , "WAVE", 4) != 0) ){
-..\Core\Src\WAV_Handler.c(87): warning:  #167-D: argument of type "__packed uint8_t *" is incompatible with parameter of type "const char *"
-                        if( (strncmp(wav1HeaderPtr->signatureHeader.ChunkID, "RIFF", 4) != 0) ||  (strncmp(wav1HeaderPtr->signatureHeader.Format , "WAVE", 4) != 0) ){
-..\Core\Src\WAV_Handler.c(398): warning:  #177-D: variable "j"  was declared but never referenced
-      UINT i,j;
-..\Core\Src\WAV_Handler.c: 3 warnings, 0 errors
+..\Core\wavePlayer\WAV_Handler.c(87): warning:  #167-D: argument of type "__packed uint8_t *" is incompatible with parameter of type "const char *"
+                if( (strncmp(wav1HeaderPtr->signatureHeader.ChunkID, "RIFF", 4) != 0) ||  
+..\Core\wavePlayer\WAV_Handler.c(88): warning:  #167-D: argument of type "__packed uint8_t *" is incompatible with parameter of type "const char *"
+                                (strncmp(wav1HeaderPtr->signatureHeader.Format , "WAVE", 4) != 0) )
+..\Core\wavePlayer\WAV_Handler.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=17728 RO-data=588 RW-data=48 ZI-data=6536  
+Program Size: Code=17812 RO-data=584 RW-data=48 ZI-data=7688  
 FromELF: creating hex file...
-"Wave Player\Wave Player.axf" - 0 Error(s), 3 Warning(s).
+"Wave Player\Wave Player.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -70,10 +68,10 @@ Package Vendor: Keil
       Include file:  CMSIS\Core\Include\tz_context.h
 
    * Component: Keil.ARM Compiler::Compiler:I/O:STDOUT:User:1.2.0
+      Source file:   Template\stdout_USART.c
+      Source file:   Template\stdout_display.c
       Source file:   Source\retarget_io.c
       Source file:   Template\stdout_user.c
-      Source file:   Template\stdout_display.c
-      Source file:   Template\stdout_USART.c
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

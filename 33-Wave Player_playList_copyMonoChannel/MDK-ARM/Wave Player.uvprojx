@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_FULL_LL_DRIVER,STM32F103xE,HSE_VALUE=8000000,HSE_STARTUP_TIMEOUT=100,LSE_STARTUP_TIMEOUT=5000,LSE_VALUE=32768,HSI_VALUE=8000000,LSI_VALUE=40000,VDD_VALUE=3300,PREFETCH_ENABLE=1</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;                     ../Drivers/STM32F1xx_HAL_Driver/Inc;                     ../Drivers/CMSIS/Device/ST/STM32F1xx/Include;                     ../Drivers/CMSIS/Include;                     ..\Core\fatfs</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\Core\fatfs;..\Core\wavePlayer</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -397,16 +397,6 @@
               <FileName>stdio_usart1.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Core\Src\stdio_usart1.c</FilePath>
-            </File>
-            <File>
-              <FileName>WAV_Handler.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\WAV_Handler.c</FilePath>
-            </File>
-            <File>
-              <FileName>SD_Utility.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\SD_Utility.c</FilePath>
             </File>
             <File>
               <FileName>main.c</FileName>
@@ -502,6 +492,21 @@
               <FileName>mmc_stm32f1_spi.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Core\fatfs\mmc_stm32f1_spi.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>wave_player</GroupName>
+          <Files>
+            <File>
+              <FileName>SD_Utility.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\wavePlayer\SD_Utility.c</FilePath>
+            </File>
+            <File>
+              <FileName>WAV_Handler.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\wavePlayer\WAV_Handler.c</FilePath>
             </File>
           </Files>
         </Group>

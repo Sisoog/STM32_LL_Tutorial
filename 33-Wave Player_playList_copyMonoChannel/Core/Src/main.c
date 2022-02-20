@@ -112,7 +112,7 @@ int main(void)
 		
 		char Start_Path[128] = "/";
 		scan_files(Start_Path);		
-		
+//		wave_play("wav/Colors.wav");
 		
 
   /* USER CODE END 2 */

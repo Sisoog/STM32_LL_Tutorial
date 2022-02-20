@@ -29,7 +29,7 @@
 		#define	waveDMA1_Channel LL_DMA_CHANNEL_3
 		#define waveDMA2	DMA2
 		#define	waveDMA2_Channel LL_DMA_CHANNEL_4
-		#define waveFile "sin.wav"
+		#define IsPressedKey() 	(((LL_GPIO_ReadInputPort(GPIOC)) & (1<<0)) == 0)
 
 /********************/
 /********///WAV file structure:

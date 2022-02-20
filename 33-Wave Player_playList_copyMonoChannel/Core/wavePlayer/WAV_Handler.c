@@ -4,7 +4,7 @@
   ******************************************************************************
   */  
 		#include "WAV_Handler.h"
-
+		
 /********************/
 /********///variables:
 
@@ -14,6 +14,8 @@
 	volatile uint8_t BufferAction = 0;				// indicator to what buffer action is needed
 	volatile bool EndofFile = false;				// indicator of the end of the file
 	volatile bool stop,next = false;
+	
+//	char workPath[128] = {0};
 /********************/
 /********///Functions:
 	
@@ -39,6 +41,7 @@
 	{
 		FRESULT fr;     /* FatFs return code */
 		fr = f_open(filptr, fileName, FA_READ);
+		
 		if(fr)
 		{
 			#if(Debug == 1)
@@ -46,14 +49,12 @@
 			#endif
 			return false;
 		}
-		
-		else
-		{
-			#if(Debug == 1)
-			printf("Successfully opened the file\r\n");
-			#endif
-			return true;
-		}
+
+		#if(Debug == 1)
+		printf("Successfully opened the file\r\n");
+		#endif
+		return true;
+
 	}
 
 	//reading and parsing the Header of the WAV file	
@@ -71,47 +72,43 @@
 			return false;
 		}
 		
-		else
+
+		#if(Debug == 1)
+		printf("reading the file..\r\n");
+		#endif
+		//setting the wav1's Header variables:
+		//The "RIFF" chunk and The "fmt" sub-chunk descriptors
+		memcpy(&wav1HeaderPtr->signatureHeader, headerBuffer, sizeof(wave_header_t1));
+		//The "data" sub-chunk
+		memcpy(&wav1HeaderPtr->dataHeader,
+					 &headerBuffer[wav1HeaderPtr->signatureHeader.Subchunk1Size + 16 + 4],
+					 sizeof(wave_header_t2));
+
+		if( (strncmp(wav1HeaderPtr->signatureHeader.ChunkID, "RIFF", 4) != 0) ||  
+				(strncmp(wav1HeaderPtr->signatureHeader.Format , "WAVE", 4) != 0) )
 		{
-			#if(Debug == 1)
-			printf("reading the file..\r\n");
-			#endif
-			//setting the wav1's Header variables:
-			//The "RIFF" chunk and The "fmt" sub-chunk descriptors
-			memcpy(&wav1HeaderPtr->signatureHeader, headerBuffer, sizeof(wave_header_t1));
-			//The "data" sub-chunk
-			memcpy(&wav1HeaderPtr->dataHeader,
-						 &headerBuffer[wav1HeaderPtr->signatureHeader.Subchunk1Size + 16 + 4],
-						 sizeof(wave_header_t2));
-	
-			if( (strncmp(wav1HeaderPtr->signatureHeader.ChunkID, "RIFF", 4) != 0) ||  (strncmp(wav1HeaderPtr->signatureHeader.Format , "WAVE", 4) != 0) ){
-				return false;
-			}
-			else
-			{
-				// set read/write pointer after the header information to read data 
-				uint16_t headerEnd = 16 + wav1HeaderPtr->signatureHeader.Subchunk1Size + 12;		// pointer to the end of header of wav file	
-				fr = f_lseek(filptr, headerEnd);
-				fr = f_read(filptr, wavBuffer, WavebufferLength, &br);
-			
-				/**** print properties of the wav file, extracted from the header ****/
-				#if(Debug == 1)
-//				printf("file ID: %s\r\n", wav1ptr->ChunkID);
-//				printf("file format: %s\r\n", wav1ptr->Format);
-				printf("number of bytes in the file(header excluded): %x\r\n", wav1HeaderPtr->dataHeader.Subchunk2Size);
-				printf("number of channels: %d\r\n", wav1HeaderPtr->signatureHeader.NumChannels);
-				printf("sample rate: %d\r\n", wav1HeaderPtr->signatureHeader.SampleRate);
-				printf("byte rate: %d\r\n", wav1HeaderPtr->signatureHeader.ByteRate);
-				printf("bits per sample: %d\r\n", wav1HeaderPtr->signatureHeader.BitsPerSample);
-				printf("data ID: %c%c%c%c\r\n", wav1HeaderPtr->dataHeader.Subchunk2ID[0],
-						 	 wav1HeaderPtr->dataHeader.Subchunk2ID[1],
-							 wav1HeaderPtr->dataHeader.Subchunk2ID[2],
-							 wav1HeaderPtr->dataHeader.Subchunk2ID[3]);
-				#endif
-				return true;
-			}
-	 
+			return false;
 		}
+
+		// set read/write pointer after the header information to read data 
+		uint16_t headerEnd = 16 + wav1HeaderPtr->signatureHeader.Subchunk1Size + 12;		// pointer to the end of header of wav file	
+		f_lseek(filptr, headerEnd);
+		f_read(filptr, wavBuffer, WavebufferLength, &br);
+	
+		/**** print properties of the wav file, extracted from the header ****/
+		#if(Debug == 1)
+		printf("number of bytes in the file(header excluded): %x\r\n", wav1HeaderPtr->dataHeader.Subchunk2Size);
+		printf("number of channels: %d\r\n", wav1HeaderPtr->signatureHeader.NumChannels);
+		printf("sample rate: %d\r\n", wav1HeaderPtr->signatureHeader.SampleRate);
+		printf("byte rate: %d\r\n", wav1HeaderPtr->signatureHeader.ByteRate);
+		printf("bits per sample: %d\r\n", wav1HeaderPtr->signatureHeader.BitsPerSample);
+		printf("data ID: %c%c%c%c\r\n", wav1HeaderPtr->dataHeader.Subchunk2ID[0],
+					 wav1HeaderPtr->dataHeader.Subchunk2ID[1],
+					 wav1HeaderPtr->dataHeader.Subchunk2ID[2],
+					 wav1HeaderPtr->dataHeader.Subchunk2ID[3]);
+		#endif
+		return true;
+
 	}
 
 	/********************* Handling the playing of the WAV file *********************/	
@@ -194,10 +191,7 @@
 													 
 					LL_DMA_SetDataLength(waveDMA2, waveDMA2_Channel, 
 															 DMA_DataLength);		
-													 
-//					LL_DMA_EnableIT_TC(waveDMA2, waveDMA2_Channel);
-//					LL_DMA_EnableIT_HT(waveDMA2, waveDMA2_Channel);
-//					LL_DMA_EnableIT_TE(waveDMA2, waveDMA2_Channel);
+				
 					LL_DMA_EnableChannel(waveDMA2, waveDMA2_Channel);	
 				}
 	}
@@ -220,9 +214,11 @@
 	{
 		LL_DAC_Enable(DAC, waveDAC_Channel1);			//Enable DAC channel 1
 		LL_DAC_Enable(DAC, waveDAC_Channel2);			//Enable DAC channel 2
+		
 		wave_DMAConf(wav1HeaderPtr, wavBuffer);
 		wave_TimerConf(wav1HeaderPtr->signatureHeader.SampleRate);
 		LL_DAC_EnableDMAReq(DAC, LL_DAC_CHANNEL_1);
+		
 		if(wav1HeaderPtr->signatureHeader.NumChannels == 1)
 			{
 			LL_DAC_EnableDMAReq(DAC, LL_DAC_CHANNEL_2);
@@ -257,6 +253,7 @@
 		{
 			br = 0;
 			f_read(filptr, wavBuffer, WavebufferLength / 2, &br);		//first half of the wavbuffer must be updated	
+			
 			if(BitsPerSample == 16)	//if bits per sample is 16 (else it's 8)
 			{	
 				for(uint16_t i = 1;  i<WavebufferLength/2;  i += 2)
@@ -265,6 +262,7 @@
 				}
 			}			
 			BufferAction &=~0x1;				//Clear the buffer action flag
+			
 			if(br<WavebufferLength/2)
 			{
 				EndofFile = true;
@@ -274,7 +272,8 @@
 		if(BufferAction&0x2)					//in case of DMA TC buffer action flag have risen
 		{
 			br = 0;
-			f_read(filptr, wavBuffer + (WavebufferLength / 2), WavebufferLength / 2, &br);	//second half of the wavbuffer must be updated			
+			f_read(filptr, wavBuffer + (WavebufferLength / 2), WavebufferLength / 2, &br);	//second half of the wavbuffer must be updated	
+			
 			if(BitsPerSample == 16)		//if bits per sample is 16 (else it's 8)	
 			{
 				for(uint16_t i = WavebufferLength/2 + 1;  i<WavebufferLength;  i += 2)
@@ -283,6 +282,7 @@
 				}
 			}			
 			BufferAction &=~0x2;				//Clear the buffer action flag
+			
 			if(br<WavebufferLength/2)			//to indicate end of the file
 			{
 				EndofFile = true;
@@ -296,21 +296,38 @@
 		FIL fil;      						    /* File object */
 		/* wave handling variables */
 		wave_header_t wavHeader1;						//struct a new header		
-		bool isWAV = false;
-		if(wave_open(&fil, fileName)){
-		isWAV = wave_readHeader(&fil, &wavHeader1);
+		
+		if(!wave_open(&fil, fileName))
+			{
+				#if(Debug == 1)
+				printf("Error in opening the file\r\n \r\n");
+				#endif
+				return;
+			}
+			
+		bool isWAV = wave_readHeader(&fil, &wavHeader1);
 		
 		if(isWAV){
 			wave_DACConf(&wavHeader1, wavBuffer);	
 			wave_start();
+			bool unpressedKey = false;
+			
 			while(!(stop || next))
 			{
 				wave_IsEndofFile(&fil, wavBuffer, wavHeader1.signatureHeader.BitsPerSample);
+				
 				//polling for button
-				if(((LL_GPIO_ReadInputPort(GPIOC)) & (1<<0)) == 0)
+				if(!unpressedKey && !IsPressedKey())
 				{
+					unpressedKey = true;
+//					LL_mDelay(10);
+				}
+				
+				if(unpressedKey && IsPressedKey())
+				{
+					#if(Debug == 1)
 					printf("next song!");
-					LL_mDelay(450);
+					#endif
 					next = true;
 				}
 			}
@@ -321,13 +338,14 @@
 			LL_DAC_Disable(DAC, waveDAC_Channel1);
 			LL_DAC_Disable(DAC, waveDAC_Channel2);	
 		}
-		else{
+		
+		else
+		{
 			#if(Debug == 1)
 			printf("file is not in WAV format or can not read header of the file!\r\n");
 			#endif
 		}
 		}
-	}
 	
 	
 	void wave_EndofFile_Callback(void)
@@ -395,22 +413,24 @@ FRESULT scan_files (
 {	 
     FRESULT res;
     DIR dir;
-    UINT i,j;
+    UINT i;
     static FILINFO fno;
+		static char workPath[128] = {0};
 		
+		strncpy(workPath, path, sizeof(workPath) - 1);
 
 
-    res = f_opendir(&dir, path);                       /* Open the directory */
+    res = f_opendir(&dir, workPath);                       /* Open the directory */
     if (res == FR_OK) {
         for (;;) {
             res = f_readdir(&dir, &fno);                   /* Read a directory item */
             if (res != FR_OK || fno.fname[0] == 0) break;  /* Break on error or end of dir */
             if (fno.fattrib & AM_DIR) {                    /* It is a directory */
-                i = strlen(path);
-                sprintf(&path[i], "/%s", fno.fname);
-                res = scan_files(path);                    /* Enter the directory */
+                i = strlen(workPath);
+                snprintf(&workPath[i],sizeof(workPath) - i - 1, "/%s", fno.fname);
+                res = scan_files(workPath);                    /* Enter the directory */
                 if (res != FR_OK) break;
-                path[i] = 0;
+                workPath[i] = 0;
             } 
 						else 
 						{                                       	 /* It is a file. */
@@ -418,9 +438,8 @@ FRESULT scan_files (
 									if(strstr(&fno.fname[strlen(fno.fname) - 5], ".WAV"))
 									{
 										char *filePath = (char*) malloc(sizeof(char) * 128);
-										sprintf(filePath, "%s/%s", path, fno.fname);
+										snprintf(filePath, 127, "%s/%s", workPath, fno.fname);
 										#if(Debug == 1)	
-//										printf("next file to play: %s/%s\n", path, fno.fname);
 										printf("we play: %s\n", filePath);
 										#endif
 										
