@@ -320,7 +320,6 @@
 				if(!unpressedKey && !IsPressedKey())
 				{
 					unpressedKey = true;
-//					LL_mDelay(10);
 				}
 				
 				if(unpressedKey && IsPressedKey())
