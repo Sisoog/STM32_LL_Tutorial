@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "LCD.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -46,13 +46,13 @@
 
 ///// SPI transmit
 //void send_SPI(uint8_t data)
-{
-    LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_4);
-		  while(!LL_SPI_IsActiveFlag_TXE(SPI1));
-		  LL_SPI_TransmitData8(SPI1, data);
-		  while(!LL_SPI_IsActiveFlag_RXNE(SPI1))
-		  {}
-}
+//{
+//    LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_4);
+//		  while(!LL_SPI_IsActiveFlag_TXE(SPI1));
+//		  LL_SPI_TransmitData8(SPI1, data);
+//		  while(!LL_SPI_IsActiveFlag_RXNE(SPI1))
+//		  {}
+//}
 
 /* USER CODE END PV */
 
