@@ -1,0 +1,303 @@
+Dependencies for Project 'Wave Player', Target 'Wave Player': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (startup_stm32f103xe.s)(0x6219CADA)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "STM32F10X_HD SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f103xe.lst --xref -o "wave player\startup_stm32f103xe.o" --depend "wave player\startup_stm32f103xe.d")
+F (..\Core\Src\stdio_usart1.c)(0x61E65CD7)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\stdio_usart1.o" --omf_browse "wave player\stdio_usart1.crf" --depend "wave player\stdio_usart1.d")
+I (../Core/Inc/stdio_usart1.h)(0x61BA1D31)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+F (../Core/Src/main.c)(0x6219C60B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\main.o" --omf_browse "wave player\main.crf" --depend "wave player\main.d")
+I (../Core/Inc/main.h)(0x6213877C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dac.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_spi.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h)(0x618C1229)
+I (../Core/Inc/WAV_Handler.h)(0x620A1BA0)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6026047E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60260474)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6026047C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60260474)
+I (../Core/Inc/SD_Utility.h)(0x6208C5B6)
+I (..\Core\fatfs\ff.h)(0x61E60DE8)
+I (..\Core\fatfs\ffconf.h)(0x62075D9C)
+I (..\Core\fatfs\diskio.h)(0x61E611DA)
+I (../Core/Inc/stdio_usart1.h)(0x61BA1D31)
+F (../Core/Src/stm32f1xx_it.c)(0x6213893F)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\stm32f1xx_it.o" --omf_browse "wave player\stm32f1xx_it.crf" --depend "wave player\stm32f1xx_it.d")
+I (../Core/Inc/main.h)(0x6213877C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dac.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_spi.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h)(0x618C1229)
+I (../Core/Inc/stm32f1xx_it.h)(0x6213877B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60260474)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_gpio.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\stm32f1xx_ll_gpio.o" --omf_browse "wave player\stm32f1xx_ll_gpio.crf" --depend "wave player\stm32f1xx_ll_gpio.d")
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_dac.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\stm32f1xx_ll_dac.o" --omf_browse "wave player\stm32f1xx_ll_dac.crf" --depend "wave player\stm32f1xx_ll_dac.d")
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dac.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_dma.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\stm32f1xx_ll_dma.o" --omf_browse "wave player\stm32f1xx_ll_dma.crf" --depend "wave player\stm32f1xx_ll_dma.d")
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\stm32f1xx_ll_rcc.o" --omf_browse "wave player\stm32f1xx_ll_rcc.crf" --depend "wave player\stm32f1xx_ll_rcc.d")
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\stm32f1xx_ll_utils.o" --omf_browse "wave player\stm32f1xx_ll_utils.crf" --depend "wave player\stm32f1xx_ll_utils.d")
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\stm32f1xx_ll_exti.o" --omf_browse "wave player\stm32f1xx_ll_exti.crf" --depend "wave player\stm32f1xx_ll_exti.d")
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_spi.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\stm32f1xx_ll_spi.o" --omf_browse "wave player\stm32f1xx_ll_spi.crf" --depend "wave player\stm32f1xx_ll_spi.d")
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_spi.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_pwr.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\stm32f1xx_ll_pwr.o" --omf_browse "wave player\stm32f1xx_ll_pwr.crf" --depend "wave player\stm32f1xx_ll_pwr.d")
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_tim.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\stm32f1xx_ll_tim.o" --omf_browse "wave player\stm32f1xx_ll_tim.crf" --depend "wave player\stm32f1xx_ll_tim.d")
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usart.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\stm32f1xx_ll_usart.o" --omf_browse "wave player\stm32f1xx_ll_usart.crf" --depend "wave player\stm32f1xx_ll_usart.d")
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h)(0x618C1229)
+F (../Core/Src/system_stm32f1xx.c)(0x618C1229)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\system_stm32f1xx.o" --omf_browse "wave player\system_stm32f1xx.crf" --depend "wave player\system_stm32f1xx.d")
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+F (..\Core\fatfs\ff.c)(0x61E60DE8)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\ff.o" --omf_browse "wave player\ff.crf" --depend "wave player\ff.d")
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6026047E)
+I (..\Core\fatfs\ff.h)(0x61E60DE8)
+I (..\Core\fatfs\ffconf.h)(0x62075D9C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (..\Core\fatfs\diskio.h)(0x61E611DA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60260476)
+F (..\Core\fatfs\ffsystem.c)(0x61E60DE8)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\ffsystem.o" --omf_browse "wave player\ffsystem.crf" --depend "wave player\ffsystem.d")
+I (..\Core\fatfs\ff.h)(0x61E60DE8)
+I (..\Core\fatfs\ffconf.h)(0x62075D9C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+F (..\Core\fatfs\ffunicode.c)(0x61E60DE8)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\ffunicode.o" --omf_browse "wave player\ffunicode.crf" --depend "wave player\ffunicode.d")
+I (..\Core\fatfs\ff.h)(0x61E60DE8)
+I (..\Core\fatfs\ffconf.h)(0x62075D9C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+F (..\Core\fatfs\mmc_stm32f1_spi.c)(0x61F994AB)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\mmc_stm32f1_spi.o" --omf_browse "wave player\mmc_stm32f1_spi.crf" --depend "wave player\mmc_stm32f1_spi.d")
+I (..\Core\fatfs\ff.h)(0x61E60DE8)
+I (..\Core\fatfs\ffconf.h)(0x62075D9C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (..\Core\fatfs\STM32F100.h)(0x61E61118)
+I (..\Core\fatfs\diskio.h)(0x61E611DA)
+F (..\Core\wavePlayer\SD_Utility.c)(0x6216363C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\sd_utility.o" --omf_browse "wave player\sd_utility.crf" --depend "wave player\sd_utility.d")
+I (..\Core\wavePlayer\SD_Utility.h)(0x6208C5B6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60260474)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (..\Core\fatfs\ff.h)(0x61E60DE8)
+I (..\Core\fatfs\ffconf.h)(0x62075D9C)
+I (..\Core\fatfs\diskio.h)(0x61E611DA)
+F (..\Core\wavePlayer\WAV_Handler.c)(0x62234B57)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\wav_handler.o" --omf_browse "wave player\wav_handler.crf" --depend "wave player\wav_handler.d")
+I (..\Core\wavePlayer\WAV_Handler.h)(0x6219C294)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6026047E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60260474)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6026047C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60260474)
+I (..\Core\wavePlayer\SD_Utility.h)(0x6208C5B6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (..\Core\fatfs\ff.h)(0x61E60DE8)
+I (..\Core\fatfs\ffconf.h)(0x62075D9C)
+I (..\Core\fatfs\diskio.h)(0x61E611DA)
+I (..\Core\NokiaTFTLib\nokia1661_lcd_driver.h)(0x621A0442)
+I (..\Core\NokiaTFTLib\nokia1661_Hw.h)(0x6219C294)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h)(0x618C1229)
+I (..\Core\waveplayer_LCD_Utility\waveplayer_LCD_Utility.h)(0x62230AD9)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h)(0x618C1229)
+I (..\Core\NokiaTFTLib\lcd_font5x7.h)(0x621A0318)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dac.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h)(0x618C1229)
+I (../Core/Inc/stdio_usart1.h)(0x61BA1D31)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h)(0x618C1229)
+I (..\Core\waveplayer_LCD_Utility\waveplayer_LCD_Wallpaper.h)(0x622349B5)
+F (..\Core\NokiaTFTLib\nokia1661_lcd_driver.c)(0x6222F628)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\nokia1661_lcd_driver.o" --omf_browse "wave player\nokia1661_lcd_driver.crf" --depend "wave player\nokia1661_lcd_driver.d")
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6026047C)
+I (..\Core\NokiaTFTLib\spfd54124b.h)(0x6214D4CA)
+I (..\Core\NokiaTFTLib\nokia1661_lcd_driver.h)(0x621A0442)
+I (..\Core\NokiaTFTLib\nokia1661_Hw.h)(0x6219C294)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h)(0x618C1229)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6026047E)
+I (..\Core\waveplayer_LCD_Utility\waveplayer_LCD_Utility.h)(0x62230AD9)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h)(0x618C1229)
+I (..\Core\waveplayer_LCD_Utility\BigFont.h)(0x621B0EC3)
+F (..\Core\waveplayer_LCD_Utility\waveplayer_LCD_Utility.c)(0x62230AD9)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\waveplayer_lcd_utility.o" --omf_browse "wave player\waveplayer_lcd_utility.crf" --depend "wave player\waveplayer_lcd_utility.d")
+I (..\Core\waveplayer_LCD_Utility\waveplayer_LCD_Utility.h)(0x62230AD9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x618C1229)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h)(0x618C1229)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x618C11D8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x618C11D8)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x618C1229)
+I (..\Core\NokiaTFTLib\nokia1661_lcd_driver.h)(0x621A0442)
+I (..\Core\NokiaTFTLib\nokia1661_Hw.h)(0x6219C294)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h)(0x618C1229)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h)(0x618C1229)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6026047E)
+F (C:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Source\retarget_io.c)(0x584F0ABE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 -Otime --apcs=interwork --split_sections --signed_chars -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\fatfs -I ..\Core\wavePlayer -I ..\Core\NokiaTFTLib -I ..\Core\waveplayer_LCD_Utility-I.\RTE\_Wave_Player-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\TarahiPC01\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32F103xE -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DHSI_VALUE="8000000" -DLSI_VALUE="40000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1"-o "wave player\retarget_io.o" --omf_browse "wave player\retarget_io.crf" --depend "wave player\retarget_io.d")
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6026047E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6026047E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60260474)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60260474)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60260478)
+I (C:\Keil_v5\ARM\ARMCC\include\rt_sys.h)(0x6026047E)
+I (.\RTE\_Wave_Player\RTE_Components.h)(0x61F5BC5E)
