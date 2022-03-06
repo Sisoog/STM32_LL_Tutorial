@@ -28,6 +28,6 @@
   - 30-LSM6DS3_accelerometer_and_gyroscope
   - 31-SD_Card
   - 32-Wave_Player
-  - 32-Wave_Player-Part2_playList_copyMonoChannel
-  - 32-Wave_Player-Part3_LCD
+  - 33-Wave_Player_playList_copyMonoChannel
+  - 34-Wave_Player_LCD
 </pre>
