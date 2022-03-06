@@ -323,8 +323,9 @@
 			
 		wave_DACConf(&wavHeader1, wavBuffer);	
 		
-		/** LCD Graphics **/
 		bool unpressedKey = false;
+		/** LCD Graphics **/
+
 		char play_time[6] = {0};
 		char remaining_time[6] = {0}; 			
 		char file_Duration[6] = {0};
