@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"temp sensor 18b20\startup_stm32f103xb.o"
+"temp sensor 18b20\stdio_usart1.o"
+"temp sensor 18b20\main.o"
+"temp sensor 18b20\stm32f1xx_it.o"
+"temp sensor 18b20\stm32f1xx_ll_gpio.o"
+"temp sensor 18b20\stm32f1xx_ll_pwr.o"
+"temp sensor 18b20\stm32f1xx_ll_exti.o"
+"temp sensor 18b20\stm32f1xx_ll_tim.o"
+"temp sensor 18b20\stm32f1xx_ll_dma.o"
+"temp sensor 18b20\stm32f1xx_ll_rcc.o"
+"temp sensor 18b20\stm32f1xx_ll_utils.o"
+"temp sensor 18b20\stm32f1xx_ll_usart.o"
+"temp sensor 18b20\system_stm32f1xx.o"
+"temp sensor 18b20\onewire.o"
+"temp sensor 18b20\ds18b20.o"
+"temp sensor 18b20\retarget_io.o"
+--library_type=microlib --strict --scatter "Temp sensor 18B20\Temp sensor 18B20.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Temp sensor 18B20.map" -o "Temp sensor 18B20\Temp sensor 18B20.axf"
