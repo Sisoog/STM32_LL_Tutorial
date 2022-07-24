@@ -13,10 +13,10 @@
 /********///definitions:
 
 ///////////Config:
-#define	_DS18B20_GPIO		GPIOA								// port used for one wire connection
-#define	_DS18B20_PIN		LL_GPIO_PIN_8				// pin used for one wire connection(signal pin of the 18B20 sensor)
+#define	_DS18B20_GPIO						GPIOA								// port used for one wire connection
+#define	_DS18B20_PIN						LL_GPIO_PIN_8				// pin used for one wire connection(signal pin of the 18B20 sensor)
 
-#define DS18B20_Scaling_factor 0.0078125
+#define DS18B20_Scaling_factor	0.0078125						// Scaling factor for the sensor's converted temperature
 
 /********************************* END OF FILE ********************************/
 /******************************************************************************/ 

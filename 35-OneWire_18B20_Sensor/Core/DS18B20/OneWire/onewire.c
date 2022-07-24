@@ -17,24 +17,30 @@
 
 /********************/
 /********///Functions:  
-  
-	/*********************** Initialization ***********************/	
+  	
+// Delay(us) function used for creating the required one_wire timing singals
 void OneWire_Delay(uint16_t time_us)
 {
 	LL_TIM_SetCounter(ONEWIRE_TIM, 0);
 	while(LL_TIM_GetCounter(ONEWIRE_TIM) <= time_us);
 }
+///////////////////////////////////////////////////////////////////////
 
+// function to set one_wire signal to low logic
 void OneWire_Low(OneWire_t *gp)
 {
 	LL_GPIO_ResetOutputPin(gp->GPIOx, gp->GPIO_Pin);
 }	
+///////////////////////////////////////////////////////////////////////
 
+// function to set one_wire signal to high logic
 void OneWire_High(OneWire_t *gp)
 {
 	LL_GPIO_SetOutputPin(gp->GPIOx, gp->GPIO_Pin);
 }	
+///////////////////////////////////////////////////////////////////////
 
+// function to set the one_wire pin as input
 void OneWire_Input(OneWire_t *gp)
 {
 	LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -44,7 +50,9 @@ void OneWire_Input(OneWire_t *gp)
 
 	LL_GPIO_Init(gp->GPIOx, &GPIO_InitStruct);
 }
-	
+///////////////////////////////////////////////////////////////////////
+
+// function to set the one_wire pin as output
 void OneWire_Output(OneWire_t *gp)
 {
 	LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -56,7 +64,9 @@ void OneWire_Output(OneWire_t *gp)
 
 	LL_GPIO_Init(gp->GPIOx, &GPIO_InitStruct);
 }
+///////////////////////////////////////////////////////////////////////
 
+// function to initialize the one-wire communication
 void OneWire_Init(OneWire_t* OneWireStruct, GPIO_TypeDef* GPIOx, uint32_t GPIO_Pin) 
 {	
 	LL_TIM_EnableCounter(ONEWIRE_TIM);
@@ -71,7 +81,9 @@ void OneWire_Init(OneWire_t* OneWireStruct, GPIO_TypeDef* GPIOx, uint32_t GPIO_P
 	OneWire_High(OneWireStruct);
 	OneWire_Delay(2000);
 }
+///////////////////////////////////////////////////////////////////////
 
+// function to reset the one-wire communication
 uint8_t OneWire_Reset(OneWire_t* OneWireStruct)
 {
 	uint8_t i;
@@ -92,7 +104,9 @@ uint8_t OneWire_Reset(OneWire_t* OneWireStruct)
 	/* Return value of presence pulse, 0 = OK, 1 = ERROR */
 	return i;
 }
+///////////////////////////////////////////////////////////////////////
 
+// function to write 1-bit to the one-wire line
 void OneWire_WriteBit(OneWire_t* OneWireStruct, uint8_t bit)
 {
 	if (bit) 
@@ -124,7 +138,9 @@ void OneWire_WriteBit(OneWire_t* OneWireStruct, uint8_t bit)
 	}
 
 }
+///////////////////////////////////////////////////////////////////////
 
+// function to read 1-bit of the one-wire line
 uint8_t OneWire_ReadBit(OneWire_t* OneWireStruct) 
 {
 	uint8_t bit = 0;
@@ -152,7 +168,9 @@ uint8_t OneWire_ReadBit(OneWire_t* OneWireStruct)
 	/* Return bit value */
 	return bit;
 }
+///////////////////////////////////////////////////////////////////////
 
+// function to write 1-byte to the one-wire line
 void OneWire_WriteByte(OneWire_t* OneWireStruct, uint8_t byte) {
 	uint8_t i = 8;
 	/* Write 8 bits */
@@ -162,7 +180,9 @@ void OneWire_WriteByte(OneWire_t* OneWireStruct, uint8_t byte) {
 		byte >>= 1;
 	}
 }
+///////////////////////////////////////////////////////////////////////
 
+// function to read 1-byte to the one-wire line
 uint8_t OneWire_ReadByte(OneWire_t* OneWireStruct)
 {
 	uint8_t i = 8,byte;
@@ -171,13 +191,12 @@ uint8_t OneWire_ReadByte(OneWire_t* OneWireStruct)
 	while (i--) {
 		byte >>= 1;
 		byte |= (OneWire_ReadBit(OneWireStruct) << 7);
-		
 	}	
 
-	
 	return byte;
 }
-	
+///////////////////////////////////////////////////////////////////////
+
 /********************************* END OF FILE ********************************/
 /******************************************************************************/ 
 

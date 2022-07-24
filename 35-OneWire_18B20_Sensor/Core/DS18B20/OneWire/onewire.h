@@ -33,9 +33,6 @@ typedef struct {
 #define ONEWIRE_CMD_READROM					0x33
 #define ONEWIRE_CMD_MATCHROM				0x55
 #define ONEWIRE_CMD_SKIPROM					0xCC  	
-/********************/
-/********///variables:
-
 
 /********************/
 /********///Functions:  
@@ -61,6 +58,7 @@ uint8_t OneWire_ReadBit(OneWire_t* OneWireStruct);
 void OneWire_WriteByte(OneWire_t* OneWireStruct, uint8_t byte); 
 
 uint8_t OneWire_ReadByte(OneWire_t* OneWireStruct);
+
 /********************************* END OF FILE ********************************/
 /******************************************************************************/ 
 
