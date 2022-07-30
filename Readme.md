@@ -1,7 +1,7 @@
 <h1> This is a repository for the projects files of STM32_LL tutorials in sisoog.com </h1>
 <i> all projects are generated using CUBE MX and developed using Keil v5.32 (with LL drivers) </i> <br>
  <br>
-  <b> Projects in this repository: </b> <pre>
+  <b> Projects in this repository: </b> 
   - 03-Blink                                 [link for the associated article in sisoog.com](https://8bi.ir/qceuo)
   - 07-Interrupt                             [link for the associated article in sisoog.com](https://8bi.ir/t7gmq)
   - 08-UART-Transmit                         [link for the associated article in sisoog.com](https://8bi.ir/7ahpp)
@@ -32,4 +32,3 @@
   - 34-Wave_Player_LCD
   - 35-OneWire_18B20_Sensor
   - 36-Servo_Motor
-</pre>
